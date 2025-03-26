@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>二郎系ラーメンの魅力</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Serif JP', serif;
+      line-height: 1.6;
+      position: relative;
+      color: #fff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("jiro.jpg") center/cover no-repeat;
+      opacity: 0.8;
+      z-index: -1;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .hero {
+      height: 360px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h2 {
+      writing-mode: vertical-rl;
+      font-size: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 10px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+
+    .section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-left: 8px solid #ffcc00;
+      padding-left: 0.5rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      color: #000;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>二郎系ラーメンの魅力</h1>
+    <nav>
+      <a href="#about">二郎とは</a>
+      <a href="#toppings">トッピング</a>
+      <a href="#shops">店舗紹介</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>ニンニク入れますか？</h2>
+  </div>
+
+  <section class="section" id="about">
+    <h3>二郎系ラーメンとは？</h3>
+    <p>極太麺・大量のもやし・アブラ・ニンニク…<br>中毒性のあるボリューム満点ラーメン。<br>学生や社会人に絶大な人気を誇ります。</p>
+  </section>
+
+  <section class="section" id="toppings">
+    <h3>推しトッピング</h3>
+    <div class="card-grid">
+      <div class="card">
+        <img src="yasai.jpg" alt="ヤサイ">
+        <p><strong>ヤサイ</strong><br>もやしとキャベツがてんこ盛り！</p>
+      </div>
+      <div class="card">
+        <img src="ninniku.jpeg" alt="ニンニク">
+        <p><strong>ニンニク</strong><br>パンチの効いた香りがクセになる！</p>
+      </div>
+      <div class="card">
+        <img src="abura.jpg" alt="アブラ">
+        <p><strong>アブラ</strong><br>とろける背脂が食欲をそそる！</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="shops">
+    <h3>よく行く店舗</h3>
+    <p>● ラーメン二郎 池袋東口店 - 麺のコシが強くて最高！<br>
+       ● ラーメン二郎 ひばりヶ丘駅前店 - スープの旨味が格別！</p>
+  </section>
+
+  <section class="section">
+    <h3>ジロリアンあるある</h3>
+    <ul>
+      <li>「ニンニク入れますか？」の声にワクワク</li>
+      <li>「マシマシ」は呪文</li>
+      <li>食後はしばらく動けない</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 ジロリアン太郎<br>
+    作成者：ジロリアン太郎 ｜ 学生作品デモ
+  </footer>
+</body>
+</html>
